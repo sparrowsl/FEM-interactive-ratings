@@ -1,0 +1,71 @@
+
+.star-icon{
+  background-color: var(--very-dark-blue);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.rate-question{
+  color: var(--white);
+  margin: 1em 0;
+}
+.rating-numbers{
+  margin: 1em 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.rating-numbers li{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey);
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
+}
+/* Style the selected item */
+li.selected-rate{
+  transition: background-color .5s ease;
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+/* Only affect the list item without the '.selected-rate' class */
+.rating-numbers li:hover:not(.selected-rate){
+  transition: background-color .25s ease-in-out;
+  color: var(--white);
+  background-color: var(--orange);
+}
+.summary{
+  color: var(--light-grey);
+  line-height: 1.4;
+}
+
+button{
+  margin-top: 1.5em;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  padding: .85em 1em;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--white);
+  color: var(--orange);
+  transition: background-color .3s ease-in-out;
+  /* transition: color .7s ease; */
+}
