@@ -7,8 +7,7 @@
 
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
   <style>
     .attribution {
       font-size: 11px;
@@ -24,7 +23,6 @@
 </head>
 
 <body>
-
   <main>
     <section class="rating-card">
       <div class="star-icon">
@@ -36,7 +34,7 @@
       <p class="summary">Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
 
-      <form action="thank-you.html" method="POST">
+      <form action="thank-you.html">
         <ul class="rating-numbers">
           <li>1</li>
           <li>2</li>
@@ -45,10 +43,28 @@
           <li>5</li>
         </ul>
 
-        <button>Submit</button>
+        <button type="submit" class="form-submit">Submit</button>
       </form>
     </section>
   </main>
+
+  <section class="thanks-modal">
+    <div class="modal-content">
+      <div class="thanks-icon">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+
+      <div class="rating-display">
+        You selected 0 out of 5
+      </div>
+
+      <h2>Thank you!</h2>
+
+      <p class="">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+  </section>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
