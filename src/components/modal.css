@@ -1,0 +1,44 @@
+/* Styles for the modal */
+.thanks-modal {
+	transform: scale(0.1);
+	opacity: 0.2;
+}
+.modal-open {
+	background-color: var(--very-dark-blue);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 1.7em;
+	color: white;
+	transition: opacity 0.25s ease, transform 5000s ease;
+	opacity: 1;
+	transform: scale(1);
+}
+.modal-content {
+	max-width: 360px;
+	border-radius: 15px;
+	padding: 2em 1.5em;
+	background-color: var(--dark-blue);
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+.rating-display {
+	background-color: var(--very-dark-blue);
+	padding: 0.45em 0.75em;
+	margin: 0.5em 0;
+	border-radius: 20px;
+	color: var(--orange);
+}
+.modal-content p {
+	text-align: center;
+	line-height: 1.5;
+}

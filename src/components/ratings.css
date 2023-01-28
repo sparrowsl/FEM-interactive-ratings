@@ -1,0 +1,63 @@
+.rating-card {
+	border-radius: 15px;
+	padding: 2em 1.5em;
+	background-color: var(--dark-blue);
+	max-width: 360px;
+}
+.rate-question {
+	margin: 1em 0;
+}
+.rate-number {
+	gap: 0.25em;
+}
+.rating-numbers {
+	margin: 1em 0;
+	list-style: none inside;
+	justify-content: space-evenly;
+}
+.rating-numbers li {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	display: grid;
+	place-content: center;
+	color: var(--light-grey);
+	background-color: var(--very-dark-blue);
+	cursor: pointer;
+}
+/* Style the selected item */
+li.selected-rate {
+	transition: background-color 0.5s ease;
+	background-color: var(--light-grey);
+	color: white;
+}
+/* Only affect the list item without the '.selected-rate' class */
+.rating-numbers li:hover:not(.selected-rate) {
+	transition: background-color 0.25s ease-in-out;
+	color: white;
+	background-color: var(--orange);
+}
+.summary {
+	color: var(--light-grey);
+	line-height: 1.4;
+}
+
+button {
+	margin-top: 1.5em;
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 9999px;
+	background-color: var(--orange);
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 0.85em 1em;
+	cursor: pointer;
+}
+button:hover {
+	background-color: white;
+	color: var(--orange);
+	transition: background-color 0.3s ease-in-out;
+	/* transition: color .7s ease; */
+}
