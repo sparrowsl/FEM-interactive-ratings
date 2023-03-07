@@ -7,22 +7,16 @@ export const [openModal, setOpenModal] = createSignal(false);
 const ratings = [1, 2, 3, 4, 5];
 const submitRate = (e) => {
 	e.preventDefault();
-	if (selectedRate()) {
-		console.log(selectedRate());
-		setOpenModal(true);
-	}
+	if (selectedRate()) setOpenModal(true);
 };
 
 export default function Ratings() {
 	return (
 		<form onSubmit={submitRate}>
-			<ul class="rating-numbers flex">
+			<ul class="flex rating-numbers">
 				<For each={ratings}>
 					{(rate) => (
-						<li
-							class={selectedRate() === rate ? "selected-rate" : ""}
-							onClick={() => setSelectedRate(rate)}
-						>
+						<li class={selectedRate() === rate ? "selected-rate" : ""} onClick={() => setSelectedRate(rate)}>
 							{rate}
 						</li>
 					)}

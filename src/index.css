@@ -36,7 +36,6 @@ main {
 
 .star-icon {
 	background-color: var(--very-dark-blue);
-	width: fit-content;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -1,8 +1,4 @@
 /* Styles for the modal */
-.thanks-modal {
-	transform: scale(0.1);
-	opacity: 0.2;
-}
 .modal-open {
 	background-color: var(--very-dark-blue);
 	position: fixed;
@@ -15,12 +11,8 @@
 	align-items: center;
 	padding: 1.7em;
 	color: white;
-	transition: opacity 0.25s ease, transform 5000s ease;
-	opacity: 1;
-	transform: scale(1);
 }
 .modal-content {
-	max-width: 360px;
 	border-radius: 15px;
 	padding: 2em 1.5em;
 	background-color: var(--dark-blue);
